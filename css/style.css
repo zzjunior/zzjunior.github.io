@@ -13,8 +13,126 @@
     padding: 0;
     box-sizing: border-box;
     letter-spacing: 1px;
+    list-style: none;
+    text-decoration: none;
 
 }
+
+body {
+
+    background-color: #1b1d1c;
+    margin: 0 auto;
+}
+
+/* Cabeçalho | Header */
+header {
+    width: 100%;
+    background-color: #000;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+header h1 img {
+    position: relative;
+    left: 0%;
+    transform: translateX(-50%);;
+    margin-top: 1rem;
+    display: block;
+    height: 350px;
+    max-width: 350px;
+    width: 100%;
+    padding:1.5px;
+    background-color: #5d5f5e;
+    border: 5px solid  #1b1d1c;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+header span {
+    color: #fff;
+}
+
+header .navegacao-primaria {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+header .navegacao-primaria li a {
+    padding: 10px;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+header .navegacao-primaria li a:hover {
+    color: #7f37c9;
+}
+
+/* meu curriculo */
+.section-div {
+    height: 80vh;
+    animation: inicializacao .7s forwards;
+    background-color: #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    padding: 60px;
+}
+
+.section-div div {
+    margin-top: 120px;
+    align-items: start;
+    display: grid;
+    gap: 30px;
+}
+
+.section-div div h1 {
+    color: #f7f7f7;
+}
+
+.section-div div h2 {
+    color: #f7f7f7;
+}
+
+.section-div div a {
+    color: #f7f7f7;
+    justify-self: start;
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.section-div div a:hover {
+    color: #7f37c9;
+    border: solid #7f37c9;
+
+}
+
+.section-div img {
+    max-width: 100%;
+}
+
+@keyframes inicializacao {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    too {
+        opacity: 1;
+        transform:  translate3d(0, 0, 0);
+    }
+}
+
+
+/*rodapé e copyhight*/
 footer {
     width: 100%;
     color: var(--color-neutral-40);
