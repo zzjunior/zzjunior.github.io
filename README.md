@@ -1,3 +1,3 @@
 # zzjunior.github.io
-Meu Pórtifolio, e algumas coisa sobre mim
+Meu Pórtifolio, e algumas coisas sobre mim
 Júnior Santos
