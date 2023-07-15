@@ -42,9 +42,9 @@ header h1 img {
     left: 50%;
     transform: translateX(-50%);;
     margin-top: 1rem;
-    display: block;
-    height: 350px;
-    max-width: 350px;
+    display: flex;
+    height: 225px;
+    max-width: 225px;
     width: 100%;
     padding:1.5px;
     background-color: #5d5f5e;
@@ -74,42 +74,31 @@ header .navegacao-primaria li a:hover {
 }
 
 /* Para telas menores que 768px */
-@media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    }
-
+@media screen and (max-width: 992px) {
     header h1 img {
-        margin-top: 0;
+        margin-top: 2rem;
         margin-bottom: 1rem;
-        height: auto;
+        height: 10rem;
+        width: 10rem;
         max-width: 100%;
         border: none;
         border-radius: 50%;
     }
 
     header .navegacao-primaria {
-        flex-direction: column;
-        gap: 5px;
+        display: none;
     }
-
-    header .navegacao-primaria li a {
-        padding: 5px;
-        font-size: 1rem;
+    
+    header i {
+        margin-top: -4rem;
+        display: block;
+        color: #5d5f5e;
+        cursor: pointer;
+        font-size: 2.5rem;
     }
 }
 @media screen and (max-width: 426px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    }
-
     header h1 img {
-        margin-top: 0;
-        margin-bottom: 1rem;
         height: auto;
         max-width: 100%;
         border: none;
@@ -117,19 +106,12 @@ header .navegacao-primaria li a:hover {
     }
 
     header .navegacao-primaria {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    header .navegacao-primaria li a {
-        padding: 5px;
-        font-size: 1rem;
+      display: none;
     }
 }
 
 /* meu curriculo */
 .section-div {
-    height: 80vh;
     animation: inicializacao .7s forwards;
     background-color: #000;
     display: grid;
@@ -307,7 +289,7 @@ transition: all 0.5s;
     font-weight: 100;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     #footer_content {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
