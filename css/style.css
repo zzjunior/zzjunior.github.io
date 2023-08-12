@@ -182,6 +182,74 @@ header .navegacao-primaria li a:hover {
     max-width: 100%;
 }
 
+/* conteudo container*/
+.container {
+    display: grid;
+    background-color: #000;
+    color: #f5f5f5;
+    width: 100%;
+    position: relative;
+}
+.container h1 {
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);;
+}
+.container h3 {
+    margin: 1rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.container li {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.container li a {
+    text-align: center;
+    margin: 0.5rem;
+    background-color: #0e0c0c;
+    color: #7f37c9;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);;
+    border-bottom: #7f37c9;
+    width: 15rem;
+    height: 10rem;
+}
+
+.container li a :hover {
+    transition: 0.3s;
+    transform: scale(0.95);
+    border: none;
+}
+
+.container li :hover {
+    width: 15.5rem;
+    height: 10.5rem;
+    transition: 0.3s;
+    color: #f5f5f5;
+    background-color: #7f37c9;
+    border: solid #7f37c9;
+}
+
+.behance {
+    text-align: center;
+    font-size: 3rem;
+    color: #5d5f5e;
+}
+.behance :hover {
+    font-size: 3.5rem;
+    transition: 0.5s;
+    color: #7f37c9;
+}
+#Portifólio {
+    background-image: transparent;
+}
+
 @keyframes inicializacao {
     from {
         opacity: 0;
