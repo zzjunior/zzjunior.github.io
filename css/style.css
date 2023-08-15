@@ -168,7 +168,7 @@ header .navegacao-primaria li a:hover {
     padding: 15px 40px;
     border: 2px solid white;
 }
-
+/* Efeitos no botão*/
 .section-div div a:hover {
     color: #f5f5f5;
     scale: 1.02;
@@ -177,7 +177,7 @@ header .navegacao-primaria li a:hover {
     border: none;
 
 }
-
+/* Imagem dentro da section */
 .section-div img {
         position: relative;
         height: 225px;
@@ -197,7 +197,7 @@ header .navegacao-primaria li a:hover {
     left: 50%;
     transform: translateX(-50%);
     box-shadow: rgba( 0, 0, 0.1) 0px 40px 120px;
-    background-color: #000;
+    background-color: #7f37c9;
     color: #f5f5f5;
     width: 95%;
     top: 1rem;
