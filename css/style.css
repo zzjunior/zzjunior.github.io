@@ -224,26 +224,25 @@ header .navegacao-primaria li a:hover {
     margin: 1rem;
 }
 .container li a {
-    background-color: #171717;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     color: #a8a29e;
     position: relative;
     border-bottom: #7f37c9;
     font-size: 0.6rem;
-    height: 7rem;
-    width: 10rem;
+    width: 10.3rem;
+    height: 8.1rem;
 } 
 
 .container li a :hover {
+    scale: 1.03;
     transition: 0.3s;
     border: none;
+    background-color: #7f37c9;
+    color: #f5f5f5;
 }
 
-.container li :hover {
-    transition: 0.3s;
-    color: #f5f5f5;
-    background-color: #7f37c9;
-    border: solid #7f37c9;
-}
 
 .behance {
     display: inline-block;
@@ -260,6 +259,16 @@ header .navegacao-primaria li a:hover {
 }
 #Portifólio {
     background-image: transparent;
+}
+
+/* css projetos*/
+#asteroid {
+    width:9.9rem;
+    height: 6.9rem;
+}
+#geometrichit {
+    width:9.9rem;
+    height: 6.9rem;
 }
 
 @keyframes inicializacao {
