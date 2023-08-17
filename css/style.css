@@ -79,7 +79,7 @@ header .navegacao-primaria li a:hover {
     color: #7f37c9;
 }
 
-/* Para telas menores que 992px */
+/*tela mobile - responsividade - menu de navegaçao mobile*/
 @media screen and (max-width: 992px) {
     header {
         position: fixed;
@@ -99,18 +99,20 @@ header .navegacao-primaria li a:hover {
     }
 
     header .navegacao-primaria.ativado {
-        width: 90%;
-        height: 50%;
-        background-color: #0e0c0c;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 50px;
+        z-index: 1;
+        width: 70%;
+        height: 85%;
+        background-color: black;
+        box-shadow: rgba(120, 15, 165, 0.2) 10px 8px 70px;
         position: fixed;
         display: grid;
-        gap: 20px;
-        top: 2.2rem;
+        gap: 5px;
+        top: 3rem;
+        padding: 5rem;
         text-align: center;
         font-weight: bold;
         border-radius: 0 0 4px 4px;
-        right: 15px;
+        right: 75px;
         animation: secaoLateral 0.8s ease-in-out forwards;
     }
 
@@ -121,7 +123,7 @@ header .navegacao-primaria li a:hover {
         border-radius: 50%;
     }
 }
-
+/* Para telas menores que 992px */
 @media screen and (max-width: 426px) {
     header .navegacao-primaria {
       display: none;
@@ -135,7 +137,7 @@ header .navegacao-primaria li a:hover {
     }
 }
 
-/* meu curriculo */
+/* seção do meu curriculo */
 .section-div {
     width: 100%;
     animation: inicializacao 0.9s forwards;
