@@ -1,4 +1,4 @@
-
+//efeito de letras digitando
 function ativaEfeito(){
     function efeitoletras(elemento){
         const arrTexto = elemento.innerHTML.split('');
