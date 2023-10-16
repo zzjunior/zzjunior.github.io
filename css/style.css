@@ -17,13 +17,27 @@
     list-style: none;
     text-decoration: none;
 }
-
 /* header - navegação principal */
 
 #ini {
     margin-left:25rem;
 }
 
+/* Conteudo - main - .container*/
+
+.main {
+    margin-top: .3rem;
+    padding-block: 1rem;
+}
+
+.digitando {
+    white-space: pre-line;
+    color: #dad5d2;
+}
+
+.alert {
+    white-space: pre-line;
+}
 /* animacoes */
 @keyframes secaoLateral {
     from {
@@ -41,26 +55,32 @@
     #ini {
         margin-left: 0;
     }
+
+    .navbar, .navbar-expand-lg {
+        position: fixed;
+    }
 }
 /* Para telas menores que 992px */
 @media screen and (max-width: 426px) {
     #ini {
         margin-left: 0;
     }
+
+    .navbar, .navbar-expand-lg {
+        position: fixed;
+    }
 }
 
 #curriculo_button {
     color: #f7f7f7;
     padding: 15px 40px;
-    border: 2px solid white;
+    border: 2px solid rgb(238, 233, 233);
     text-decoration: none;
+    background-color: #000;
 }
 /* Efeitos no botão*/
 #curriculo_button:hover {
-    color: #f5f5f5;
-    scale: 1.02;
     background-color: #7f37c9;
-    border: none;
 }
 
 @keyframes inicializacao {
@@ -78,6 +98,7 @@
 
 /*rodapé e copyhight*/
 footer {
+    margin-top: 1rem;
     width: 100%;
     color: #fff;
 }

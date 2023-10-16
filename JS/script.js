@@ -1,24 +1,52 @@
 //efeito de letras digitando
 const titulo = document.querySelector('.digitando');
-const digitando = `Olá! Eu sou Júnior Santos.`
+const digitando = `Bem vindo ao meu Portfólio!`;
 const interval = 70;
 
-//primeiro texto
-function ativaEfeito(titulo, digitando, interval){
+
+ function ativaEfeito(titulo, digitando, interval){
     
     const elemento = digitando.split("").reverse();
+    let text = '';
     
     const typer = setInterval(()=>{
 
-        if(!elemento.length){
-            return clearInterval(typer);
-        }
+       if(!elemento.length){
+        titulo.textContent = text;
+        return clearInterval(typer);
+    }
 
         const next = elemento.pop();
-
-        titulo.innerHTML += next;
-        contador++;
-    }, interval)
+        text += next;
+        titulo.textContent = text;
+   }, interval)
 }
 
 ativaEfeito(titulo, digitando, interval);
+
+//Alerta de desenvolvimento
+
+const Alerta = document.querySelector('.alert');
+const textAlert = `Este projeto esta em desenvolvimento... \n._.`;
+const intervalMaior = 50;
+
+
+ function ativaAlert(Alerta, textAlert, intervalMaior){
+    
+    const elemento = textAlert.split("").reverse();
+    let text = '';
+    
+    const typer = setInterval(()=>{
+
+       if(!elemento.length){
+        Alerta.textContent = text;
+        return clearInterval(typer);
+    }
+
+        const next = elemento.pop();
+        text += next;
+        Alerta.textContent = text;
+   }, intervalMaior)
+}
+
+ativaAlert(Alerta, textAlert, intervalMaior);
