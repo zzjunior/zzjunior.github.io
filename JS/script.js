@@ -5,24 +5,28 @@ const interval = 70;
 
 
  function ativaEfeito(titulo, digitando, interval){
-    
-    const elemento = digitando.split("").reverse();
-    let text = '';
-    
-    const typer = setInterval(()=>{
 
-       if(!elemento.length){
-        titulo.textContent = text;
-        return clearInterval(typer);
+    titulo.innerHTML = "";
+    const charArray = digitando.split("");
+    for (let i = 0; i < charArray.length; i++) {
+      setTimeout(() => {
+         titulo.innerHTML += charArray[i];
+         
+      }, i * interval);
     }
-
-        const next = elemento.pop();
-        text += next;
-        titulo.textContent = text;
-   }, interval)
 }
 
-ativaEfeito(titulo, digitando, interval);
+function startRepeatingEffect(titulo, digitando, interval, repeatInterval) {
+   function run() {
+      ativaEfeito(titulo, digitando, interval);
+      setTimeout(() => {
+         run();
+      }, repeatInterval);
+   }
+   run();
+}
+
+startRepeatingEffect(titulo, digitando, interval, 5000);
 
 //Alerta de desenvolvimento
 
