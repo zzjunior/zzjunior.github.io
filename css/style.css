@@ -81,7 +81,8 @@
 }
 /* Efeitos no botão*/
 #curriculo_button:hover {
-    scale: 1.1;
+    scale: 1.01;
+    background-color: #57139b;
 }
 
 @keyframes inicializacao {
