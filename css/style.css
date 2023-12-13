@@ -33,7 +33,38 @@
 
 .digitando {
     white-space: pre-line;
-    color: #dad5d2;
+    color: var(--color-neutral-40);
+}
+
+#ilustracao {
+    margin-top: -3rem;
+    width: 300px;
+    height: 350px;
+}
+
+#apresentacao {
+    color: var(--cor-id-visual);
+    margin-top: 0.5rem;
+}
+
+.saudacoes {
+    display: flex;
+    color: #7e7d7d;
+    padding: 2rem;
+    border: #7e7d7d solid 1px;
+}
+
+#foto-i {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: #57139b solid 1.5px;
+    margin-bottom: 0.5rem;
+}
+
+#sobremim {
+    margin-top: 5rem;
+    width: 60%;
 }
 
 .alert {

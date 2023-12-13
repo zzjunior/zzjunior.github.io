@@ -1,6 +1,6 @@
 //efeito de letras digitando
 const titulo = document.querySelector('.digitando');
-const digitando = `Bem vindo ao meu Portfólio!`;
+const digitando = `Olá! Bem vindo ao meu Portfólio`;
 const interval = 70;
 
 
