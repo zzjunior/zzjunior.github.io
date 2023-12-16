@@ -39,7 +39,7 @@
 
 #apresentacao {
     color: var(--cor-id-visual);
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
 }
 
 .saudacoes {
@@ -55,6 +55,15 @@
     border: #57139b solid 1.5px;
     padding: 4px;
     margin-bottom: 0.5rem;
+}
+
+#barra {
+    border-bottom: #7e7d7d 3px solid;
+    width: 10%;
+    position: relative;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #sobremim {
@@ -83,29 +92,18 @@
 
 /*tela mobile - responsividade - menu de navegaçao mobile*/
 @media screen and (max-width: 992px) {
-    #ini {
-        margin-left: 0;
-    }
 
-    .navbar, .navbar-expand-lg {
-        position: fixed;
-    }
 }
 /* Para telas menores que 992px */
 @media screen and (max-width: 426px) {
-    #ini {
-        margin-left: 0;
-    }
 
-    .navbar, .navbar-expand-lg {
-        position: fixed;
-    }
 }
 
 #curriculo_button {
     color: #f7f7f7;
     padding: 15px 40px;
-    border: 2px solid rgb(238, 233, 233);
+    /*border: 2px solid rgb(238, 233, 233);*/
+    border: none;
     text-decoration: none;
     background-color: var(--cor-id-visual);
 }
