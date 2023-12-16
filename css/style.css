@@ -32,43 +32,42 @@
 }
 
 .digitando {
+    margin-top: 5rem;
     white-space: pre-line;
-    color: var(--color-neutral-40);
-}
-
-#ilustracao {
-    margin-top: -3rem;
-    width: 300px;
-    height: 350px;
+    color: var(--cor-id-visual);
 }
 
 #apresentacao {
     color: var(--cor-id-visual);
-    margin-top: 0.5rem;
+    margin-top: 2.5rem;
 }
 
 .saudacoes {
-    display: flex;
     color: #7e7d7d;
     padding: 2rem;
-    border: #7e7d7d solid 1px;
 }
 
 #foto-i {
+    margin-bottom: 2rem;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     border: #57139b solid 1.5px;
+    padding: 4px;
     margin-bottom: 0.5rem;
 }
 
 #sobremim {
     margin-top: 5rem;
-    width: 60%;
+    width: 100%;
 }
 
 .alert {
     white-space: pre-line;
+}
+
+#linhadotempo {
+    color: #7e7d7d;
 }
 /* animacoes */
 @keyframes secaoLateral {
@@ -131,16 +130,17 @@
 
 /*rodapé e copyhight*/
 footer {
-    margin-top: 1rem;
+    border-top: #0e0c0c .1px solid;
+    margin-top: 10rem;
     width: 100%;
-    color: #fff;
+    color: var(--color-neutral-30);
 }
 .footer-link {
     text-decoration: none;
 }
 
 #footer_content {
-    background-color: var(--color-neutral-10);
+    background-color: #000;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;
@@ -195,7 +195,6 @@ transition: all 0.5s;
 
 .footer-list .footer-link {
     color: var(--color-neutral-30);
-    transition: all 0.5s;
 }
 .footer-list .footer-link:hover {
     color: #7f37c9;
@@ -204,10 +203,10 @@ transition: all 0.5s;
 #footer_copyright {
     display: flex;
     justify-content: center;
-    background-color: #000;
+    background-color: #0e0c0c;
     font-size: 0.9rem;
     padding: 1.5rem;
-    font-weight: 100;
+    font-weight: 90;
 }
 
 @media screen and (max-width: 992px) {
