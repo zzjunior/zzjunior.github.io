@@ -27,6 +27,9 @@
     padding-block: 1rem;
 }
 
+#navbarNavDropdown{
+    margin-left: 8rem;
+}
 .digitando {
     margin-top: 5rem;
     white-space: pre-line;
@@ -212,6 +215,12 @@ transition: all 0.5s;
     #footer_content {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
+    }
+    #ini {
+        display: none;
+    }
+    #navbarNavDropdown {
+        margin-left: 0;
     }
 }
 
