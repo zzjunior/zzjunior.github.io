@@ -37,7 +37,7 @@
 }
 
 #apresentacao {
-    color: var(--cor-id-visual);
+    color: var(--color-neutral-30);
     margin-top: 1.5rem;
 }
 
@@ -48,7 +48,7 @@
 
 #foto-i {
     margin-bottom: 2rem;
-    width: 225px;
+    width: 210px;
     height: 200px;
     border-radius: 50%;
     border: #57139b solid 1.5px;
@@ -120,6 +120,11 @@
 
 .freela {
     display: flexbox;
+    width: 90%;
+    padding-bottom: 10px;
+    color: var(--cor-id-visual);
+    background-color: #070707;
+    border: #171717;
 }
 .job_logo {
     width: 110px;
@@ -127,7 +132,11 @@
     margin-top: 1rem;
     top: 1rem;
     border-radius: 50%;
-    border: #57139b solid 2.5px;
+    border: var(--color-neutral-30) solid 2.5px;
+}
+.collapse {
+    text-decoration: #0a0a0a;
+    color: var(--cor-id-visual);
 }
 
 /*rodapé e copyhight*/
@@ -222,6 +231,10 @@ transition: all 0.5s;
     #navbarNavDropdown {
         margin-left: 0;
     }
+    #foto-i {
+        width: 190px;
+        height: 180px;
+    }
 }
 
 @media screen and (max-width: 426px) {
@@ -230,4 +243,14 @@ transition: all 0.5s;
         grid-template-columns: repeat(1, 1fr);
         padding: 3rem 2rem;
     }    
+    #foto-i {
+        width: 90px;
+        height: 80px;
+    }
+}
+@media screen and (max-width: 320px) {    
+    #foto-i {
+        width: 50px;
+        height: 50px;
+    }
 }

@@ -31,7 +31,7 @@ startRepeatingEffect(titulo, digitando, interval, 5000);
 //Alerta de desenvolvimento
 
 const Alerta = document.querySelector('.alert');
-const textAlert = `Este projeto esta em desenvolvimento... \n._.`;
+const textAlert = `Este projeto esta em desenvolvimento... \n._. \n\nAguarde!...`;
 const intervalMaior = 50;
 
 
