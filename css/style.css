@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppis:wght@200;300;400;500;700&display=swap');
 
 :root{
     --color-neutral-0: #0e0c0c;
@@ -17,6 +18,10 @@
     letter-spacing: 1px;
     list-style: none;
     text-decoration: none;
+}
+
+.poppis {
+    font-family: 'Poppis', sans-serif;
 }
 /* header - navegação principal */
 
@@ -37,7 +42,7 @@
 }
 
 #apresentacao {
-    color: var(--color-neutral-30);
+    color: whitesmoke;
     margin-top: 1.5rem;
 }
 
