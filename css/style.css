@@ -46,17 +46,13 @@
     margin-top: 1.5rem;
 }
 
-.saudacoes {
-    color: #7e7d7d;
-    padding: 2rem;
-}
 
 #foto-i {
     margin-bottom: 2rem;
-    width: 210px;
-    height: 200px;
+    width: 200px;
+    height: auto;
     border-radius: 50%;
-    border: /*#57139b*/ #7e7d7d solid 1.5px;
+    border: /*#57139b*/ #bebebe solid 1.5px;
     padding: 4px;
     margin-bottom: 0.5rem;
 }
@@ -252,8 +248,8 @@ transition: all 0.5s;
         margin-left: 0;
     }
     #foto-i {
-        width: 190px;
-        height: 180px;
+        width: 70%;
+        height: auto;
     }
     .job_logo {
         width: 120px;
@@ -279,8 +275,8 @@ transition: all 0.5s;
         padding: 3rem 2rem;
     }    
     #foto-i {
-        width: 90px;
-        height: 80px;
+        width: 50%;
+        height: auto;
     }
 }
 @media screen and (max-width: 320px) {    
@@ -291,4 +287,16 @@ transition: all 0.5s;
     .freela_main {
         width: 100%;
     }
+}
+
+
+#tj_:hover {
+    border: solid .01rem #57139b;
+}
+
+#umbler_:hover {
+    border: solid .05rem #57139b;
+}
+#teia_:hover {
+    border: solid .05rem #57139b;
 }

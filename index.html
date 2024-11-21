@@ -13,12 +13,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
-  <body style="background-color: #000;">
+  <body class="bg-black bg-gradient">
     <!-----------------Cabeçalho--------------------->
-    <header>
-      <nav class="navbar navbar-expand-lg border-body" style="padding:1rem; background-color:#000; color:#a8a29e;" data-bs-theme="dark">
-        <div class="container-fluid" style="background-color: #000;">
-          <a class="navbar-brand" style="margin-right:8rem; background-color:#000; color:#7922d0;"  href="https://github.com/zzjunior">zzjunior</a>
+    <header class="shadow">
+      <nav class="navbar navbar-expand-lg border-body" style="padding:1rem;" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand p-2" style="margin-right:8rem; color:#7922d0;"  href="https://github.com/zzjunior"><i class="fa-brands fa-connectdevelop"></i> zzjunior</a>
           <button class="navbar-toggler" style="color:#7f37c9; border:none;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -28,7 +28,7 @@
                 <a id="ini" class="nav-link active" style="margin-left: 25rem;color: #7f37c9;" aria-current="page" href="#inicio">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#https://github.com/zzjunior?tab=repositories">Projetos </a>
+                <a class="nav-link" href="#projetos">Projetos </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#sobremim">Sobre mim</a>
@@ -38,9 +38,9 @@
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Fale comigo
+                  Contato
                 </a>
-                <ul class="dropdown-menu shadow" style="background-color: #000;">
+                <ul class="dropdown-menu shadow">
                   <li><a class="dropdown-item" target="_blank" href="https://instagram.com/siga_tj">Instagram</a></li>
                   <li><a class="dropdown-item" target="_blank" href="https://www.linkedin.com/in/zjúniorsantos/">Linkedin</a></li>
                   <li><a class="dropdown-item" target="_blank" href="mailto:santos.junior.706@ufrn.edu.br">E-mail</a></li>
@@ -53,153 +53,83 @@
    </header>
    <!--------------------------conteudo---------------------------->
    <main class="main text-center">
-    <div class="digitando mb-5"><span id="texto"></span><span class="h5 ponteiro">|</span></div>
-    <section class="saudacoes rounded-2">
+    <div class="digitando mb-5"><span class="h2" id="texto"></span><span class="h1 ponteiro">|</span></div>
     <div>
       <img id="foto-i" class="img-fluid shadow-xl" src="./images/IMG_20230708_161307904_HDR.jpg" />
-      <h1 class="img-fluid" id="barra"></h1>
-      <h1 id="apresentacao">Júnior Santos</h1>
-      <p class="h6 poppis" style="color:#7f37c9;">
-        <i>Desenvolvedor Web | Designer Gráfico</i>
+      <h2 id="apresentacao">Júnior Santos</h2>
+      <p class="h5" style="color:#7f37c9;">
+        <i class="fa-solid fa-code"></i> <i>Desenvolvedor Web</i>
       </p>
         </div>
-
-        <nav class="container" id="sobremim">
-          <h2 class="text-center accordion border-top border-dark rounded-3 pt-4" style="color: #7922d0;">Sobre mim</h2>
-        <p class="text border-bottom border-dark rounded-3 pt-4 pb-5">
-          Um entusiasta de programação e tecnologia, sempre estudando e tentando inovar meus conhecimentos
-          nas areas em que atuo e também nas que me interesso, aqui você verá um pouco sobre minha trajetória até aqui, 
-          assim como também meus projetos feitos a trabalho, estudos ou por diversão!
+<!---------------------sobre------------------>
+        <section class="container text-secondary rounded-3 shadow" id="sobremim">
+        <div class="text-start p-5 text border-bottom border-dark rounded-4">
+          <h3 class="text-start" style="color: #7922d0;">Sobre mim <i class="fa-solid fa-question"></i></h3>
+          Um amante de tecnologia! Meu inicio de fato nesse universo veio em 2019, quando conquistei meu primeiro computador, desde então venho estudando e me aprimorando em várias areas desde de hardware à softwares.
+          <p class="mt-2">
+          Atuante na area de TI desde de 2020, onde comecei a estudar programação, desde então venho me aprimorando e buscando sempre novos desafios e novos aprendizados. Hoje atuo no mercado tanto no meu trabalho atual na gestão operacional do TEIA CRM, como também como freelancer na TJ Agência criada por mim quando iniciei na área.
         </p>
-        </nav>
+          Estou sempre estudando e tentando inovar meus conhecimentos, atualmente as áreas onde tenho mais interesse são desenvolvimento web, automação de processos com uso de inteligência artificial e programação, mas também me aventurando bastante na análise de dados.
+        </div>
+        </section>
+        <!------------------fim do sobre----------------->
 
-        <section id="linhadotempo" class="shadow-lg rounded-3 pt-4 rounded-3">
-          <h3 class="title" style="color: #7922d0; margin-bottom:2rem;">Experiência Profissional</h3>
-          <div class="row border-bottom  pb-3 rounded-3 border-dark">
-            <div class="col">
-              <section id="umbler_" class="freela_main img-fluid roudnded-2">
-                <img class="img-fluid shadow-lg job_logo" src="https://community.umbler.com/br/uploads/default/original/1X/e49fc3997536ff05dd624448cb9d2aacfafb09c1.png"/>
-                <p class="m-3 title-job"><strong class="h5">Umbler</strong><br> Costumer Sucess Host Analyst</p>
-                <i class="h6">mai. de 2022 - dez. de 2022 | <strong>8 meses</strong></i>
-                <!--<div class="accordion" id="accordionExample" data-bs-theme="dark">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Competências
-                      </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <p>
-                          <li>• Atendimento aos clientes via chat online e e-mail, auxílio na criação de projetos.
-                            <br>• Suporte aos clientes com dificuldades em websites.
-                          </li>
-                          <br>
-                          <i style="color: #6d3c9e;">Atuando na equipe de Custumer Success Host Analyst da Umbler, estive na linha de frente auxiliando os clientes
-                          na resolução de problemas desde os problemas simples aos mais complexos, além de levar estes problemas e análises
-                          feitas durante o atendimento para outros setores mais especializados,para assim serem criadas estratégias e produtos
-                          que ajudassem trazendo melhorias para as plataformas da empresa, um papel excepcional para o crescimento da Umbler em si.</i>
-                          <br>
-                          <h6 id="text">Conhecimentos</h6>
-                          <span class="row col-12 m-3">
-                            <style>
-                              .span_job {
-                                width: 3.5rem;
-                                background-color: #1f1f1f;
-                                border-radius: .1rem;
-                                padding: .6rem;
-                                margin: .1rem;
-                            }
-                            @media screen and (max-width: 992px) {
-                              .span_job{
-                                margin: none;
-                              }
-                            }
-                            </style>
-                          <i class="span_job" title="WordPress">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-original.svg"/>
-                          </i> 
-                          <i class="span_job" title="HTML5">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-                          </i>
-                          <i class="span_job" title="CSS3">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-                          </i> 
-                          <i class="span_job" title="JavaScript">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" />
-                          </i>
-                          <i class="span_job" title="PHP">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
-                          </i> 
-                          <i class="span_job" title="FTP">
-                            <img src="./images/ftp-icon.png" alt="" style="width: 2rem;">
-                          </i> 
-                          <i class="span_job" title="MySQL">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
-                          </i>
-                          <i class="span_job" title="SQLServer">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg" />
-                          </i>
-                          <i class="span_job" title="DNS">
-                            <img src="https://cdn-icons-png.flaticon.com/128/9583/9583260.png" style="width: 2rem;"/>
-                          </i>
-                          <i class="span_job">
-                            <img src="https://cdn-icons-png.flaticon.com/128/13651/13651218.png" style="width: 2rem;"/>
-                          </i>
-                            </span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>-->
-            </section>
-
-            <section id="teia_" class="freela_main img-fluid roudnded-2">
-              <img class="job_logo img-fluid shadow-lg" src="./images/teia logo.png"/>
-              <p class="m-3 title-job"><strong>Teia CRM</strong><br>Support Analyst & CS strategy leader</p>
-            </section>
-
-            <section id="tj_" class="freela_main img-fluid roudnded-2">
-                <img class="job_logo img-fluid shadow-lg" src="https://agenciatj.com.br/images/TJ.png"/>
-                <p class="m-3 title-job"><strong>TJ Agência</strong><br> Web Developer & Graphic Designer</p>
-            </section>
-
+        <section id="linhadotempo" class="shadow container rounded-3">
+          <div class="row p-5">
+            <h3 class="title text-start border-bottom border-dark" style="color: #7922d0; margin-bottom:2rem;">Experiência Profissional <i class="fa-solid fa-timeline"></i></h3>
+             <!---tj-->
+             <div class="col-12">
+              <div id="tj_" class="freela_main img-fluid rounded-4 text-start p-4 w-100">
+                <a href="https://agenciatj.com.br/" target="_blank" rel="noopener noreferrer"><img class="job_logo img-fluid shadow-lg" src="https://agenciatj.com.br/images/TJ.png"/></a>
+                <p class="m-3 h4 title-job text-secondary"><strong>TJ Agência</strong></br>
+                  <span class="h6"><b>Co-founder</b></br></span>
+                  <span class="h6"><b>Web Developer</b></br>
+                    <i class="fst-italic">Dez. 2020 - O momento.</i>
+                  </span>
+                </p>
             </div>
           </div>
-          </section>
+     <!--fim---------tj-->
+            <!---umbler-->         
+            <div class="col-12">
+              <div id="umbler_" class="freela_main text-start img-fluid rounded-4 p-4 w-100">
+                <a href="https://umbler.com/br" target="_blank" rel="noopener noreferrer"><img class="img-fluid shadow-lg job_logo" src="https://community.umbler.com/br/uploads/default/original/1X/e49fc3997536ff05dd624448cb9d2aacfafb09c1.png"/></a>
+                <p class="m-3 title-job"><strong class="h4">Umbler</strong>
+                  <br class="h6 text-secondary">
+                    <b>Customer Success</b></br>
+                    <span class="h6 text-secondary fst-italic">mai. de 2022 - dez. de 2022 | <strong>8 meses</strong></span>
+                  </p>
+                </p>
+            </div>
+            </div>
+            <!------------fim umbler---------->
+    <!---teia-->
+        <div class="col-12">
+            <div id="teia_" class="freela_main img-fluid rounded-4 text-start p-4 w-100">
+              <a href="https://teiacrm.com.br" target="_blank" rel="noopener noreferrer"><img class="job_logo img-fluid shadow-lg" src="./images/teia logo.png"/></a>
+              <p class="m-3 title-job">
+                <article class="text-secondary">
+                  <strong class="h4">Teia CRM</strong></br>
+                  <b>Support Analyst & SDR</b>
+                  <p class="fst-italic">mar. 2023 à jul. 2024</p>
+                  <span> 
+                    <b>IT Strategic Manager</b>
+                    <p class="fst-italic">agos. 2024 - O momento.</p>
+                </span>
+                </article>
+              </p>
+              </div>
+            </div>
+       <!---fim----------teia-->
+          </div>
+            </section>
+<!-----------------------Projetos-->
+<section id="projetos" class="container rounded-3 shadow-lg">
+  <div class="p-5">
+    <h3 class="text-start" style="color: #7922d0; margin-bottom:2rem;">Projetos <i class="fa-solid fa-mug-hot"></i></h3>
 
-      <!---<details>
-        <summary class="freela text-center" style="color:#7f37c9;">
-          <img class="job_logo" src="https://community.umbler.com/br/uploads/default/original/1X/e49fc3997536ff05dd624448cb9d2aacfafb09c1.png"/>
-          <br>Umbler - Costumer Sucess Host Analyst</summary>
-        <li>
-          <a href="https://umbler.com/br">Acesse - Site Oficial</a>
-        </li>
-      </details>
-
-      <details>
-        <summary  class="freela text-center" style="color:#7f37c9;">
-          <img class="job_logo" src="./images/teia logo.png"/>
-          <br>Teia CRM | JCW</summary>
-        <li>
-          <a href="">Help Teia</a>
-        </li>
-      </details>
-
-      <details class="exp_job">
-        <summary class="freela text-center" style="color:#7f37c9;">
-          <img class="job_logo" src="https://agenciatj.com.br/images/TJ.png"/><br>Desenvolvedor Web - TJ Agência
-        </summary>
-        <li>
-          <p>
-            <i>Como freelancer eu realizei alguns serviços como Design Gráfico, desenvolvendo logos e posts para o instagram.
-            E também atuei desenvolvendo Landing Pages, e cuidando de domínios e site WordPress.</i>
-          </p>
-          Veja um pouco do meu portfólio no link:<br>
-          <a href="https://agenciatj.com.br" style="text-decoration: none;">Agencia TJ</a>
-        </li>
-      </details> --->
-    </section>
+  </div>
+</section>
    </main>
    <!--------------------------------------------------------------------------------------------------------------------------------------------------------->
    <div class="text-center">
@@ -213,7 +143,7 @@
       <div id="footer_content">
         <div id="footer_contacts">
           <h3>Júnior Santos</h3>
-          <p>Web Developer | Graphic Designer</p>
+          <p>Web Developer | IT Analyst</p>
 
           <div id="footer_social_media">
             <a href="https://www.instagram.com/zzjunior_/" target="_blank" class="footer-link" id="instagram">
@@ -233,10 +163,13 @@
             <h4>Sobre</h4>
           </li>
           <li>
-            <a href="#" class="footer-link">Hobbies</a>
+            <a href="#" class="footer-link">Repositórios</a>
           </li>
           <li>
             <a href="#" class="footer-link">Trabalhos & Projetos</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Games criados</a>
           </li>
         </ul>
 
@@ -251,12 +184,12 @@
             <a href="https://www.instagram.com/siga_tj/" target="_blank" class="footer-link">Landing Page | Site institucional</a>
           </li>
           <li>
-            <a href="https://www.instagram.com/siga_tj/" target="_blank" class="footer-link">Social Mídia</a>
+            <a href="https://agenciatj.com.br" target="_blank" class="footer-link">Minha Agencia</a>
           </li>
           </ul>
       </div>
       <div id="footer_copyright">
-        zzjunior
+        Júnior Santos | Copyhight
         &#169
         2024
       </div>
