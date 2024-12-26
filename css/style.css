@@ -147,8 +147,8 @@
     height: 100px;
     margin-top: 1rem;
     top: 1rem;
-    border-radius: 50%;
-    border: var(--color-neutral-30) solid 2.5px;
+    border-radius: 15%;
+    border: var(--color-neutral-30) solid 1.5px;
 }
 
 .shadow-lg-bottom {
@@ -300,3 +300,62 @@ transition: all 0.5s;
 #teia_:hover {
     border: solid .05rem #57139b;
 }
+.descricao-profissao {
+   i {
+    color:#7f37c9;
+   }
+}
+
+.titles {
+    i {
+        color: #7f37c9;
+    }
+    h3 {
+        color: #7922d0;
+        margin-bottom:2rem;
+    }
+}
+
+#alert {
+    h6 {
+        color:rgb(184, 184, 184);
+    }
+}
+  
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next {
+  position: absolute;
+  top: 50%; /* Centraliza verticalmente */
+  transform: translateY(-50%); /* Ajusta para o centro exato */
+  width: auto;
+  height: auto;
+  z-index: 2; /* Fica acima do conteúdo */
+}
+
+.carousel .carousel-control-prev {
+  left: -50px; /* Mantém os botões fora do conteúdo */
+}
+
+.carousel .carousel-control-next {
+  right: -50px; /* Mantém os botões fora do conteúdo */
+}
+
+.carousel .carousel-control-prev-icon,
+.carousel .carousel-control-next-icon {
+  display: none; /* Oculta os ícones padrão */
+}
+
+.carousel .carousel-control-prev span,
+.carousel .carousel-control-next span {
+  color: #fff; /* Ajuste de cor para os ícones personalizados */
+  font-size: 2rem; /* Tamanho dos ícones */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 1.5rem; /* Adiciona espaçamento entre os botões */
+  }
+  
+  .navbar-nav .dropdown-menu {
+    margin-top: 0.5rem; /* Ajusta a posição do dropdown se necessário */
+  }
+  

@@ -9,8 +9,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!---Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/github-languages/1.0.0/github-languages.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1, // Número de slides visíveis por vez
+        spaceBetween: 20, // Espaço entre os slides em pixels
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        loop: true, // Permitir que o carrossel seja infinito
+      });
+    });
+  </script>  
 </head>
 
   <body class="bg-black bg-gradient">
@@ -25,25 +46,25 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a id="ini" class="nav-link active" style="margin-left: 25rem;color: #7f37c9;" aria-current="page" href="#inicio">Inicio</a>
+                <a id="ini" class="nav-link active" style="margin-left: 25rem;color: #7f37c9;" aria-current="page" href="#inicio">Inicio <i class="fa-solid fa-house"></i></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#projetos">Projetos </a>
+                <a class="nav-link" href="#projetos">Projetos <i class="fa-solid fa-diagram-project"></i></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#sobremim">Sobre mim</a>
+                <a class="nav-link" href="#sobremim">Sobre mim <i class="fa-solid fa-question"></i></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#linhadotempo">Experiência</a>
+                <a class="nav-link" href="#linhadotempo">Experiência <i class="fa-solid fa-bars-staggered"></i></a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Contato
+                  Contato <i class="fa-regular fa-paper-plane"></i>
                 </a>
                 <ul class="dropdown-menu shadow">
-                  <li><a class="dropdown-item" target="_blank" href="https://instagram.com/siga_tj">Instagram</a></li>
-                  <li><a class="dropdown-item" target="_blank" href="https://www.linkedin.com/in/zjúniorsantos/">Linkedin</a></li>
-                  <li><a class="dropdown-item" target="_blank" href="mailto:santos.junior.706@ufrn.edu.br">E-mail</a></li>
+                  <li><a class="dropdown-item" href="https://instagram.com/zzjunior_">Instagram <i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a class="dropdown-item" href="https://linkedin.com/in/zjúniorsantos/">Linkedin <i class="fa-brands fa-linkedin-in"></i></a></li>
+                  <li><a class="dropdown-item" target="_blank" href="mailto:santos.junior.706@ufrn.edu.br">E-mail <i class="fa-solid fa-envelope"></i></a></li>
                 </ul>
               </li>
             </ul>
@@ -55,36 +76,82 @@
    <main class="main text-center">
     <div class="digitando mb-5"><span class="h2" id="texto"></span><span class="h1 ponteiro">|</span></div>
     <div>
-      <img id="foto-i" class="img-fluid shadow-xl" src="./images/IMG_20230708_161307904_HDR.jpg" />
+      <img id="foto-i" class="img-fluid shadow-xl" src="./images/IMG_20230708_161307904_HDR.jpg" title="..." />
       <h2 id="apresentacao">Júnior Santos</h2>
-      <p class="h5" style="color:#7f37c9;">
+      <p class="h5 descricao-profissao">
         <i class="fa-solid fa-code"></i> <i>Desenvolvedor Web</i>
       </p>
         </div>
 <!---------------------sobre------------------>
         <section class="container text-secondary rounded-3 shadow" id="sobremim">
         <div class="text-start p-5 text border-bottom border-dark rounded-4">
-          <h3 class="text-start" style="color: #7922d0;">Sobre mim <i class="fa-solid fa-question"></i></h3>
+          <h3 class="text-start titles">Sobre mim <i class="fa-solid fa-question"></i></h3>
           Um amante de tecnologia! Meu inicio de fato nesse universo veio em 2019, quando conquistei meu primeiro computador, desde então venho estudando e me aprimorando em várias areas desde de hardware à softwares.
           <p class="mt-2">
           Atuante na area de TI desde de 2020, onde comecei a estudar programação, desde então venho me aprimorando e buscando sempre novos desafios e novos aprendizados. Hoje atuo no mercado tanto no meu trabalho atual na gestão operacional do TEIA CRM, como também como freelancer na TJ Agência criada por mim quando iniciei na área.
         </p>
           Estou sempre estudando e tentando inovar meus conhecimentos, atualmente as áreas onde tenho mais interesse são desenvolvimento web, automação de processos com uso de inteligência artificial e programação, mas também me aventurando bastante na análise de dados.
         </div>
+
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <h6>O que mais uso</h6>
+              <div class="d-flex justify-content-start flex-wrap">
+                <div class="m-2">
+                  <i class="fab fa-js" style="font-size: 50px; color: #7f37c9;"></i>
+                  <p class="text-center" style="font-size: x-small;">JavaScript</p>
+                </div>
+                <div class="m-2">
+                  <i class="fab fa-php" style="font-size: 50px; color: #7f37c9;"></i>
+                  <p class="text-center" style="font-size: x-small;">PHP</p>
+                </div>
+                <div class="m-2">
+                  <i class="fab fa-html5" style="font-size: 50px; color: #7f37c9;"></i>
+                  <p class="text-center" style="font-size: x-small;">HTML</p>
+                </div>
+                <div class="m-2">
+                  <i class="fab fa-css3-alt" style="font-size: 50px; color: #7f37c9;"></i>
+                  <p class="text-center" style="font-size: x-small;">CSS</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <h6>Estou aprimorando</h6>
+              <div class="d-flex justify-content-start flex-wrap">
+                <div class="m-2">
+                  <i class="fab fa-python" style="font-size: 50px; color: #7f37c9;"></i>
+                  <p class="text-center" style="font-size: x-small;" >Python</p>
+                </div>
+                <div class="m-2">
+                  <i class="fa-brands fa-laravel" style="font-size: 50px; color: #7f37c9;"></i>
+                  <p class="text-center" style="font-size: x-small;">Laravel</p>
+                </div>
+                <div class="m-2">
+                  <i class="fa-brands fa-node" style="font-size: 50px; color: #7f37c9;"></i>
+                  <p class="text-center" style="font-size: x-small;">Node.js</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>       
         </section>
-        <!------------------fim do sobre----------------->
+        <!------------------fim do sobre-----------------> 
+        
+        
+<!-----------------------Experiência Profissional-->        
 
         <section id="linhadotempo" class="shadow container rounded-3">
-          <div class="row p-5">
-            <h3 class="title text-start border-bottom border-dark" style="color: #7922d0; margin-bottom:2rem;">Experiência Profissional <i class="fa-solid fa-timeline"></i></h3>
+          <div class="row titles p-5">
+            <h3 class="title text-start border-bottom border-dark">Experiência Profissional <i class="fa-solid fa-timeline"></i></h3>
              <!---tj-->
              <div class="col-12">
               <div id="tj_" class="freela_main img-fluid rounded-4 text-start p-4 w-100">
-                <a href="https://agenciatj.com.br/" target="_blank" rel="noopener noreferrer"><img class="job_logo img-fluid shadow-lg" src="https://agenciatj.com.br/images/TJ.png"/></a>
+                <a href="https://agenciatj.com.br/" target="_blank" rel="noopener noreferrer"><img class="job_logo img-fluid shadow-lg" title="tj" src="https://agenciatj.com.br/images/TJ.png"/></a>
                 <p class="m-3 h4 title-job text-secondary"><strong>TJ Agência</strong></br>
                   <span class="h6"><b>Co-founder</b></br></span>
                   <span class="h6"><b>Web Developer</b></br>
-                    <i class="fst-italic">Dez. 2020 - O momento.</i>
+                    <span class="fst-italic">Dez. 2020 - O momento.</span>
                   </span>
                 </p>
             </div>
@@ -93,7 +160,7 @@
             <!---umbler-->         
             <div class="col-12">
               <div id="umbler_" class="freela_main text-start img-fluid rounded-4 p-4 w-100">
-                <a href="https://umbler.com/br" target="_blank" rel="noopener noreferrer"><img class="img-fluid shadow-lg job_logo" src="https://community.umbler.com/br/uploads/default/original/1X/e49fc3997536ff05dd624448cb9d2aacfafb09c1.png"/></a>
+                <a href="https://umbler.com/br" target="_blank" rel="noopener noreferrer"><img title="umbler" class="img-fluid shadow-lg job_logo" src="https://community.umbler.com/br/uploads/default/original/1X/e49fc3997536ff05dd624448cb9d2aacfafb09c1.png"/></a>
                 <p class="m-3 title-job"><strong class="h4">Umbler</strong>
                   <br class="h6 text-secondary">
                     <b>Customer Success</b></br>
@@ -106,7 +173,7 @@
     <!---teia-->
         <div class="col-12">
             <div id="teia_" class="freela_main img-fluid rounded-4 text-start p-4 w-100">
-              <a href="https://teiacrm.com.br" target="_blank" rel="noopener noreferrer"><img class="job_logo img-fluid shadow-lg" src="./images/teia logo.png"/></a>
+              <a href="https://teiacrm.com.br" target="_blank" rel="noopener noreferrer"><img class="job_logo img-fluid shadow-lg" title="teiacrm" src="./images/teia logo.png"/></a>
               <p class="m-3 title-job">
                 <article class="text-secondary">
                   <strong class="h4">Teia CRM</strong></br>
@@ -124,10 +191,201 @@
           </div>
             </section>
 <!-----------------------Projetos-->
-<section id="projetos" class="container rounded-3 shadow-lg">
-  <div class="p-5">
-    <h3 class="text-start" style="color: #7922d0; margin-bottom:2rem;">Projetos <i class="fa-solid fa-mug-hot"></i></h3>
+<section id="projetos" class="container rounded-3 shadow-lg titles">
+  <div class="p-5 main">
+    <h3 class="text-start">Projetos <i class="fa-solid fa-mug-hot"></i></h3>
+    
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        
+        <div class="carousel-item active">
+          <div class="card text-white bg-black">
+            <div class="card-body p-5  rounded-3">
+              <h5 class="card-title text-start">Geometric hiT</h5>
+              <p class="card-text text-start text-white-50 fs-6">Projeto de estudos de lógica de programação. Este foi meu primeiro projeto feito no início da faculdade em 2020. O conceito inicial do projeto seria criar um jogo para crianças do fundamental (1° à 4° ano) que conseguisse passar algum ensinamento didático para a criança enquanto ela joga. Com isso, tive a ideia de criar um jogo onde é necessário a captura de brinquedos em formatos geométricos.</p>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const repoUrl = 'https://github.com/zzjunior/GeometrichiT';
+    fetch(`https://api.github.com/repos/${repoUrl.split('github.com/')[1]}/languages`)
+      .then(response => response.json())
+      .then(languages => {
+        const totalBytes = Object.values(languages).reduce((acc, bytes) => acc + bytes, 0);
+        const languagesList = Object.keys(languages)
+          .map(lang => {
+            const percentage = ((languages[lang] / totalBytes) * 100).toFixed(2);
+            return `<li><i class="fa-solid fa-comment-nodes"></i> ${lang}: ${percentage}% <i class="fa-solid fa-chart-pie"></i></li>`;
+          })
+          .join('');
+        document.getElementById('languages-used-1').innerHTML = `<ul>${languagesList}</ul>`;
+      })
+      .catch(error => console.error('Error fetching languages:', error));
+  });
+</script>
+<div id="languages-used-1" class="text-start text-white-50" style="font-size: x-small;"></div>
+              <div class="row text-start mb-3 g-2">
+                <div class="col-3 d-flex justify-content-center">
+                  <img src="./images/projeto1.png" class="img-fluid rounded-3" alt="">
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                  <img src="./images/image-p-1.png" class="img-fluid rounded-3" alt="">
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                  <img src="./images/image-p-2.png" class="img-fluid rounded-3" alt="">
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                  <img src="./images/image-p-3.png" class="img-fluid rounded-3" alt="">
+                </div>
+              </div>                            
+              <div class="text-start mb-2"><a href="https://zzjunior.github.io/GeometrichiT/" rel="noopener" target="_blank" class="btn btn-dark text-white-50">Veja <i class="fa-solid fa-gamepad"></i></a></div>
+              <div class="text-start"><a href="https://zzjunior.github.io/GeometrichiT/" rel="noopener" target="_blank" class="btn btn-dark text-white-50">Repositório <i class="fa-solid fa-code"></i></a></div>
+            </div>
+          </div>
+        </div>
 
+        <div class="carousel-item">
+          <div class="card text-white bg-black">
+            <div class="card-body p-5  rounded-3">
+              <h5 class="card-title text-start">Site Teia CRM</h5>
+              <p class="card-text text-start text-white-50 fs-6">Site comercial / Institucional para a empresa Teia CRM. O site também já possuí integração com sistemas da empresa como CRM e disparos no whatsapp.</p>
+              <div id="linguagens" class="text-start text-white-50 mb-3" style="font-size: x-small;">
+                <ul>
+                  <li><i class="fa-solid fa-comment-nodes"></i> PHP: 74.0% <i class="fa-solid fa-chart-pie"></i></li>
+                  <li><i class="fa-solid fa-comment-nodes"></i> JavaScript: 14.8% <i class="fa-solid fa-chart-pie"></i></li>
+                  <li><i class="fa-solid fa-comment-nodes"></i> CSS: 4.7% <i class="fa-solid fa-chart-pie"></i></li>
+                  <li><i class="fa-solid fa-comment-nodes"></i> Dockerfile: 1.8% <i class="fa-solid fa-chart-pie"></i></li>
+                  <li><i class="fa-solid fa-comment-nodes"></i> SCSS: 4.7% <i class="fa-solid fa-chart-pie"></i></li>
+                </ul>
+              </div>
+              <div class="row text-start mb-3 g-2">
+                <div class="col-3 d-flex justify-content-center">
+                  <img src="./images/projeto-3.png" class="img-fluid rounded-3" alt="">
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                  <img src="./images/image-p2-1.png" class="img-fluid rounded-3" alt="">
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                  <img src="./images/image-p2-2.png" class="img-fluid rounded-3" alt="">
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                  <img src="./images/image-p2-3.png" class="img-fluid rounded-3" alt="">
+                </div>
+              </div>  
+              <div class="text-start mb-2"><a href="https://teiacrm.com" rel="noopener" target="_blank" class="btn btn-dark text-white-50">Veja <i class="fa-solid fa-globe"></i></i></a></div>
+              <!---<div class="text-start"><a href="https://github.com/zzjunior/teiacrm_site" rel="noopener" target="_blank" class="btn btn-dark text-white-50">Repositório <i class="fa-solid fa-code"></i></a></div>-->
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card text-white bg-black">
+            <div class="card-body p-5 rounded-3">
+              <h5 class="card-title text-start">Controle de Leds para ESP32</h5>
+              <p class="card-text text-start text-white-50 fs-6">Trabalho de IOT na ECT UFRN. A ideia seria criar um controlador remoto de leds ou demais coisas que fossem possíveis utilizar no ESP32. O projeto usa linguagem python, html e javascript além de protocolo MQTT para comunicação com hardware.</p>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const repoUrl = 'https://github.com/zzjunior/controleRGBWEB_MQTT';
+    fetch(`https://api.github.com/repos/${repoUrl.split('github.com/')[1]}/languages`)
+      .then(response => response.json())
+      .then(languages => {
+        const totalBytes = Object.values(languages).reduce((acc, bytes) => acc + bytes, 0);
+        const languagesList = Object.keys(languages)
+          .map(lang => {
+            const percentage = ((languages[lang] / totalBytes) * 100).toFixed(2);
+            return `<li><i class="fa-solid fa-comment-nodes"></i> ${lang}: ${percentage}% <i class="fa-solid fa-chart-pie"></i></li>`;
+          })
+          .join('');
+        document.getElementById('languages-used-2').innerHTML = `<ul>${languagesList}</ul>`;
+      })
+      .catch(error => console.error('Error fetching languages:', error));
+  });
+</script>
+<div id="languages-used-2" class="text-start text-white-50" style="font-size: x-small;"></div>
+
+              <div class="row text-start mb-3 g-2">
+                <div class="col-3 d-flex justify-content-center">
+                  <img src="./images/projeto-4.png" class="img-fluid rounded-3" alt="">
+                </div>
+              </div>  
+              <div class="text-start mb-2"><a href="https://zzjunior.github.io/controleRGBWEB_MQTT/" rel="noopener" target="_blank" class="btn btn-dark text-white-50">Veja <i class="fa-solid fa-globe"></i></i></a></div>
+              <div class="text-start"><a href="https://github.com/zzjunior/controleRGBWEB_MQTT" rel="noopener" target="_blank" class="btn btn-dark text-white-50">Repositório <i class="fa-solid fa-code"></i></a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card text-white bg-black">
+            <div class="card-body p-5 rounded-3">
+              <h5 class="card-title text-start">Páginas de captura de Leads</h5>
+              <p class="card-text text-start text-white-50 fs-6">Página de captura de Leads para compra de Site e Artes para vendedores Honda.</p>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const repoUrl = 'https://github.com/zzjunior/vendedor.site-cadastro';
+    fetch(`https://api.github.com/repos/${repoUrl.split('github.com/')[1]}/languages`)
+      .then(response => response.json())
+      .then(languages => {
+        const totalBytes = Object.values(languages).reduce((acc, bytes) => acc + bytes, 0);
+        const languagesList = Object.keys(languages)
+          .map(lang => {
+            const percentage = ((languages[lang] / totalBytes) * 100).toFixed(2);
+            return `<li><i class="fa-solid fa-comment-nodes"></i> ${lang}: ${percentage}% <i class="fa-solid fa-chart-pie"></i></li>`;
+          })
+          .join('');
+        document.getElementById('languages-used-10').innerHTML = `<ul>${languagesList}</ul>`;
+      })
+      .catch(error => console.error('Error fetching languages:', error));
+  });
+</script>
+<div id="languages-used-10" class="text-start text-white-50" style="font-size: x-small;"></div>
+
+              <div class="row text-start mb-3 g-2">
+                <div class="col-3 d-flex justify-content-center">
+                  <img src="./images/projeto-5.png" class="img-fluid rounded-3" alt="">
+                </div>
+              </div>  
+              <div class="text-start mb-2"><a href="https://vendedor.site/cadastro" rel="noopener" target="_blank" class="btn btn-dark text-white-50">Veja <i class="fa-solid fa-globe"></i></i></a></div>
+              <div class="text-start"><a href="https://github.com/zzjunior/vendedor.site-cadastro?tab=readme-ov-file" rel="noopener" target="_blank" class="btn btn-dark text-white-50">Repositório <i class="fa-solid fa-code"></i></a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card text-white bg-black">
+            <div class="card-body p-5 rounded-3">
+              <h5 class="card-title text-start">Plataforma de FAC para CRM</h5>
+              <p class="card-text text-start text-white-50 fs-6">Neste projeto realizei a criação de uma site para dúvidas e sugestões de uma plataforma de CRM, onde são criados e postados tutoriais e vídeos de ajuda.</p>
+<div id="languages-used-5" class="text-start text-white-50 mb-3" style="font-size: x-small;">
+  <ul>
+    <li><i class="fa-solid fa-comment-nodes"></i> PHP: 84.2% <i class="fa-solid fa-chart-pie"></i></li>
+    <li><i class="fa-solid fa-comment-nodes"></i> JavaScript: 6.8% <i class="fa-solid fa-chart-pie"></i></li>
+    <li><i class="fa-solid fa-comment-nodes"></i> CSS: 6.8% <i class="fa-solid fa-chart-pie"></i></li>
+    <li><i class="fa-solid fa-comment-nodes"></i> Hack: 2.0% <i class="fa-solid fa-chart-pie"></i></li>
+    <li><i class="fa-solid fa-comment-nodes"></i> SCSS: 0.2% <i class="fa-solid fa-chart-pie"></i></li>
+  </ul>
+</div>
+              <div class="row text-start mb-3 g-2">
+                <div class="col-3 d-flex justify-content-center">
+                  <img src="./images/projeto-6.png" class="img-fluid rounded-3" alt="">
+                </div>
+              </div>  
+              <div class="text-start mb-2"><a href="https://help.teiacrm.com.br" rel="noopener" target="_blank" class="btn btn-dark text-white-50">Veja <i class="fa-solid fa-globe"></i></i></a></div>
+              <!---<div class="text-start"><a href="https://github.com/zzjunior/facteia" rel="noopener" target="_blank" class="btn btn-dark text-white-50">Repositório <i class="fa-solid fa-code"></i></a></div>-->
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <nav class="container buttons">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" title="button-prev" style="z-index: 1;">
+        <span class="carousel-control-prev-icon visually-hidden" aria-hidden="false"></span>
+        <span ><i class="fa-solid fa-circle-arrow-left fs-1"></i></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" title="button-next" style="z-index: 1;">
+        <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+        <span><i class="fa-solid fa-circle-arrow-right fs-1"></i></span>
+      </button>
+    </nav>
+    </div>
+    
   </div>
 </section>
    </main>
@@ -194,6 +452,8 @@
         2024
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-NOxA67MC6c/DnpE37pcUB+Z+sG8U4eA0Wz+uvU3v4eBjI2ujtA9iZE/iwQp5TTTf" crossorigin="anonymous"></script>
     <script src="./JS/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
  </body>
