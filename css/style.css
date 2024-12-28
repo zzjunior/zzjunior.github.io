@@ -4,7 +4,7 @@
 :root{
     --color-neutral-0: #0e0c0c;
     --color-neutral-10: #171717;
-    --color-neutral-30: #a8a29e;
+    --color-neutral-30: #595e64;
     --color-neutral-40: #f5f5f5;
     --cor-id-visual: #7f37c9;
 
@@ -310,8 +310,11 @@ transition: all 0.5s;
     i {
         color: #7f37c9;
     }
+    h5 {
+        color: #7f37c9;
+    }
     h3 {
-        color: #7922d0;
+        color: var(--color-neutral-30);
         margin-bottom:2rem;
     }
 }
