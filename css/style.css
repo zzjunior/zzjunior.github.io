@@ -43,12 +43,13 @@
 
 #apresentacao {
     color: whitesmoke;
-    margin-top: 1.5rem;
 }
 
+#inicio-eu {
+    margin-bottom: -3rem;
+}
 
 #foto-i {
-    margin-bottom: 2rem;
     width: 200px;
     height: auto;
     border-radius: 50%;
@@ -69,7 +70,6 @@
 #sobremim {
     width: 80%;
     margin-bottom:2rem; 
-    margin-top:2rem;
 }
 
 .alert {
@@ -361,4 +361,19 @@ transition: all 0.5s;
   .navbar-nav .dropdown-menu {
     margin-top: 0.5rem; /* Ajusta a posição do dropdown se necessário */
   }
-  
+
+  @media (max-width: 768px) {
+    .carousel-inner .col-3 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  .modal-body img {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+  }
+
+  .text-color-secundary {
+    color: var(--cor-id-visual);
+  }
