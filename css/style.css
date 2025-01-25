@@ -157,7 +157,6 @@
 
 /*rodapé e copyhight*/
 footer {
-    border-top: #0e0c0c .1px solid;
     margin-top: 10rem;
     width: 100%;
     color: var(--color-neutral-30);
@@ -167,7 +166,6 @@ footer {
 }
 
 #footer_content {
-    background-color: #000;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;
@@ -230,7 +228,7 @@ transition: all 0.5s;
 #footer_copyright {
     display: flex;
     justify-content: center;
-    background-color: #0e0c0c;
+    background-color: #000000;
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 90;
