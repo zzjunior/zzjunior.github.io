@@ -2,328 +2,66 @@
 <html lang="pt-br">
 
 <head>
-  <title>zzjunior - Portifólio</title>
-  <link rel="shortcut icon" href="./images/CODEICON.png" type="image/x-icon">
-  <!---links, metatags, imagens e styles---->
+  <title>zzjunior - Portfólio</title>
+  <link rel="shortcut icon" href="./assets/images/CODEICON.png" type="image/x-icon">
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <!---Swiper CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/github-languages/1.0.0/github-languages.min.js"></script>
-  <!--dev-icon-->
-  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const swiper = new Swiper('.swiper-container', {
-        slidesPerView: 1, // Número de slides visíveis por vez
-        spaceBetween: 20, // Espaço entre os slides em pixels
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        loop: true, // Permitir que o carrossel seja infinito
-      });
-    });
-  </script>  
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/output.css">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.2.2/dist/cdn.min.js" defer></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 
-  <body class="bg-black bg-gradient">
-    <!-----------------Cabeçalho--------------------->
-    <header class="shadow">
-      <nav class="navbar navbar-expand-lg border-body" style="padding:1rem;" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand p-2" style="margin-right:8rem; color:#7922d0;"  href="https://github.com/zzjunior"><i class="fa-brands fa-github"></i> <b>zzjunior</b></a>
-          <button class="navbar-toggler" style="color:#7f37c9; border:none;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a id="ini" class="nav-link active" style="margin-left: 25rem;color: #7f37c9;" aria-current="page" href="#inicio"><b>Inicio</b> <i class="fa-solid fa-house"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projetos">Projetos <i class="fa-solid fa-diagram-project"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#sobremim">Sobre mim <i class="fa-solid fa-question"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#linhadotempo">Experiência <i class="fa-solid fa-bars-staggered"></i></a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Contato <i class="fa-regular fa-paper-plane"></i>
-                </a>
-                <ul class="dropdown-menu shadow">
-                  <li><a class="dropdown-item" href="https://instagram.com/zzjunior_">Instagram <i class="fa-brands fa-instagram"></i></a></li>
-                  <li><a class="dropdown-item" href="https://linkedin.com/in/zjúniorsantos/">Linkedin <i class="fa-brands fa-linkedin-in"></i></a></li>
-                  <li><a class="dropdown-item" target="_blank" href="mailto:santos.junior.706@ufrn.edu.br">E-mail <i class="fa-solid fa-envelope"></i></a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-   </header>
-   <!--------------------------conteudo---------------------------->
-   <main class="main text-center">
-    <div class="digitando mb-5"><span class="h2" id="texto"></span><span class="h1 ponteiro">|</span></div>
-<!---------------------sobre------------------>
-        <section class="container text-secondary rounded-4 border border-dark border-3" id="sobremim">
-          <div class="container p-5 text-start" id="inicio-eu">
-            <img id="foto-i" class="img-fluid shadow-xl" src="./images/IMG_20230708_161307904_HDR.jpg" title="..." />
-            <h2 id="apresentacao">Júnior Santos</h2>
-            <p class="h5 descricao-profissao">
-              <i class="fa-solid fa-code"></i> <i>Desenvolvedor Web</i>
-            </p>
-              </div>
-        <div class="text-start p-5 text border-bottom border-dark rounded-4">
-          <h3 class="text-start titles">Sobre mim <i class="fa-solid fa-question"></i></h3>
-          Um amante de tecnologia! Meu inicio de fato nesse universo veio em 2019, quando conquistei meu primeiro computador, desde então venho estudando e me aprimorando em várias areas desde de hardware à softwares.
-          <p class="mt-2">
-          Atuante na area de TI desde de 2020, onde comecei a estudar programação, desde então venho me aprimorando e buscando sempre novos desafios e novos aprendizados. Hoje atuo no mercado tanto no meu trabalho atual na gestão operacional do TEIA CRM, como também como freelancer na TJ Agência criada por mim quando iniciei na área.
-        </p>
-          Estou sempre estudando e tentando inovar meus conhecimentos, atualmente as áreas onde tenho mais interesse são desenvolvimento web, automação de processos com uso de inteligência artificial e programação, mas também me aventurando bastante na análise de dados.
-        </div>
+<body class="font-sans bg-gray-900 text-white flex flex-col items-center justify-center">
+  
+  <header class="text-center mt-5">
+    <div id="profile-container" class="mb-5"></div>
+  </header>
 
-        <div class="container mt-5">
-          <div class="row">
-            <h5 class="text-center">Hard Skills</h5>
-            
-            <!-- Seção de Linguagens de Programação -->
-            <div class="col-12 col-md-6">
-              <h6>O que mais uso</h6>
-              <div class="d-flex justify-content-center flex-wrap">
-                <div class="m-2">
-                  <i class="fab fa-js" style="font-size: 50px; color: #7f37c9;"></i>
-                  <p class="text-center" style="font-size: x-small;">JavaScript</p>
-                </div>
-                <div class="m-2">
-                  <i class="fab fa-php" style="font-size: 50px; color: #7f37c9;"></i>
-                  <p class="text-center" style="font-size: x-small;">PHP</p>
-                </div>
-                <div class="m-2">
-                  <i class="fab fa-html5" style="font-size: 50px; color: #7f37c9;"></i>
-                  <p class="text-center" style="font-size: x-small;">HTML</p>
-                </div>
-                <div class="m-2">
-                  <i class="fab fa-css3-alt" style="font-size: 50px; color: #7f37c9;"></i>
-                  <p class="text-center" style="font-size: x-small;">CSS</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-12 col-md-6">
-              <h6>Estou aprimorando</h6>
-              <div class="d-flex justify-content-center flex-wrap">
-                <div class="m-2">
-                  <i class="fab fa-python" style="font-size: 50px; color: #7f37c9;"></i>
-                  <p class="text-center" style="font-size: x-small;">Python</p>
-                </div>
-                <div class="m-2">
-                  <i class="fa-brands fa-laravel" style="font-size: 50px; color: #7f37c9;"></i>
-                  <p class="text-center" style="font-size: x-small;">Laravel</p>
-                </div>
-                <div class="m-2">
-                  <i class="fa-brands fa-node" style="font-size: 50px; color: #7f37c9;"></i>
-                  <p class="text-center" style="font-size: x-small;">Node.js</p>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Seção de Sistemas -->
-            <div class="col-12 mt-4 border-top border-dark">
-              <h6 class="mt-3">Frameworks & Ferramentas</h6>
-              <div class="d-flex justify-content-center flex-wrap">
-                <div class="m-2">
-                  <i class="devicon-mysql-original" style="font-size: 50px; color: #7f37c9;"></i>
-                  <p class="text-center" style="font-size: x-small;">MySQL</p>
-                </div>
-                <div class="m-2">
-                  <i class="devicon-git-plain" style="font-size: 50px; color: #7f37c9;"></i>
-                  <p class="text-center" style="font-size: x-small;">Git</p>
-                </div>
-                <div class="m-2">
-                  <i class="devicon-vscode-plain" style="font-size: 50px; color: #7f37c9;"></i>
-                  <p class="text-center" style="font-size: x-small;">VS Code</p>
-                </div>
-                <div class="m-2">
-                  <i class="devicon-bootstrap-plain" style="font-size: 50px; color: #7f37c9;"></i>
-                  <p class="text-center" style="font-size: x-small;">Bootstrap</p>
-                </div>
-                <div class="m-2">
-                  <i class="fa-brands fa-laravel" style="font-size: 50px; color: #7f37c9;"></i>
-                  <p class="text-center" style="font-size: x-small;">Laravel</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>    
-        </section>
-        <!------------------fim do sobre-----------------> 
-        
-        
-<!-----------------------Experiência Profissional-->        
-
-        <section id="linhadotempo" class="container">
-          <div class="row titles p-5">
-            <h3 class="title text-start">Experiência profissional <i class="fa-solid fa-graduation-cap"></i></h3>
-            <!---tj-->
-            <div class="col-12 position-relative mb-5"></div>
-              <div id="tj_" class="freela_main img-fluid rounded-4 text-start p-4 w-100">
-                <a href="https://agenciatj.com.br/" target="_blank" rel="noopener noreferrer"><img class="job_logo img-fluid shadow-lg" title="tj" src="https://agenciatj.com.br/images/TJ.png" /></a>
-                <p class="m-3 h4 title-job text-secondary"><strong>TJ Agência</strong></br>
-                  <span class="h6"><b>Co-founder</b></br></span>
-                  <span class="h6"><b>Web Developer</b></br>
-                    <span class="fst-italic text-color-secundary">Dez. 2020 - O momento.</span>
-                  </span>
-                </p>
-              </div>
-              <div class="timeline-line"></div>
-            </div>
-            <!--fim---------tj-->
-            <!---umbler-->
-            <div class="col-12 position-relative mb-5">
-              <div id="umbler_" class="freela_main text-end img-fluid rounded-4 p-4 w-100">
-                <a href="https://umbler.com/br" target="_blank" rel="noopener noreferrer"><img title="umbler" class="img-fluid shadow-lg job_logo" src="https://community.umbler.com/br/uploads/default/original/1X/e49fc3997536ff05dd624448cb9d2aacfafb09c1.png" /></a>
-                <p class="m-3 title-job"><strong class="h4">Umbler</strong>
-                  <p class="h6 text-secondary">
-                    <b>Customer Success Host</b></p>
-                  <span class="text-color-secundary fst-italic">mai. de 2022 - dez. de 2022 | <strong>8 meses</strong></span>
-                </p>
-              </div>
-              <div class="timeline-line"></div>
-            </div>
-            <!------------fim umbler---------->
-            <!---teia-->
-            <div class="col-12 position-relative mb-5">
-              <div id="teia_" class="freela_main img-fluid rounded-4 text-start p-4 w-100">
-                <a href="https://teiacrm.com.br" target="_blank" rel="noopener noreferrer"><img class="job_logo img-fluid shadow-lg" title="teiacrm" src="./images/teia logo.png" /></a>
-                <p class="m-3 title-job">
-                  <article class="text-secondary">
-                    <strong class="h4">Teia CRM</strong></br>
-                    <b>Support Analyst & SDR</b>
-                    <p class="fst-italic">mar. 2023 à jul. 2024</p>
-                    <span>
-                      <b>IT Strategic Manager</b>
-                      <p class="fst-italic text-color-secundary">agos. 2024 - O momento.</p>
-                    </span>
-                  </article>
-                </p>
-              </div>
-              <div class="timeline-line"></div>
-            </div>
-            <!---fim----------teia-->
-          </div>
-        </section>
-<!-----------------------Projetos-->
-<section id="projetos" class="container rounded-4 titles border border-3 border-dark">
-  <div class="p-5 main">
-    <h3 class="text-start">Projetos <i class="fa-solid fa-mug-hot"></i></h3>
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner"></div>
-      <nav class="container buttons">
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" title="button-prev" style="z-index: 1;">
-          <span class="carousel-control-prev-icon visually-hidden" aria-hidden="false"></span>
-          <span><i class="fa-solid fa-chevron-left"></i></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" title="button-next" style="z-index: 1;">
-          <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
-          <span><i class="fa-solid fa-chevron-right"></i></span>
-        </button>
-      </nav>
+  <main class="text-center flex flex-col items-center justify-center w-full p-5">
+    <div class="digitando mb-5">
+      <span class="text-2xl font-semibold" id="texto"></span>
+      <span class="text-2xl ponteiro">|</span>
     </div>
-  </div>
-  <script src="JS/projects.js"></script>
-   <!-- Modal para exibir a imagem em tamanho maior -->
-  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content" style="background: transparent; border: none;">
-            <div class="modal-header" style="border-bottom: none;">
-              <h5 class="modal-title" id="imageModalLabel"><i class="fa-solid fa-image text-white"></i></h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="filter: invert(1);"></button>
-            </div>
-            <div class="modal-body">
-              <img id="modalImage" src="" class="img-fluid" alt="Imagem do Projeto">
-            </div>
-          </div>
-        </div>
-      </div>
-</section>
-   </main>
-   <!--------------------------------------------------------------------------------------------------------------------------------------------------------->
-   <div class="text-center">
-    <h6 class="alert" style="color:rgb(184, 184, 184);"></h6>
-  <a href="#linhadotempo" title="indisponível no momento"></a>
-    <button class="shadow" id="curriculo_button" onclick="alert('Desculpe, o meu curriculo não está dispónivel agora.')">Meu currículo</button>
-  </a>
-   </div>
-    <!-----------------rodapé e copyhight--------------->
-    <footer>
-      <div id="footer_content">
-        <div id="footer_contacts">
-          <h3>Júnior Santos</h3>
-          <p>Web Developer | IT Analyst</p>
 
-          <div id="footer_social_media">
-            <a href="https://www.instagram.com/zzjunior_/" target="_blank" class="footer-link" id="instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/zj%C3%BAniorsantos/" target="_blank" class="footer-link" id="linkedin">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="https://github.com/zzjunior" target="_blank" class="footer-link" id="github">
-              <i class="fa-brands fa-github"></i>
-            </a>
+    <!-- Devicons - SoftSkills -->
+    <div class="w-full flex justify-center">
+      <div id="soft-skills" class="grid grid-cols-8 sm:grid-cols-8 md:grid-cols-8 lg:grid-cols-8 gap-3"></div>
+    </div>
 
-          </div>
-        </div>
-        <ul class="footer-list">
-          <li>
-            <h4>Sobre</h4>
-          </li>
-          <li>
-            <a href="#" class="footer-link">Repositórios</a>
-          </li>
-          <li>
-            <a href="#" class="footer-link">Trabalhos & Projetos</a>
-          </li>
-        </ul>
+    <!-- Botões -->
+    <div class="w-full max-w-md space-y-4 mt-6">
+      <a href="https://newportfolio-three-kappa.vercel.app/" class="block w-full bg-gray-800 text-black-50 text-lg font-semibold py-3 rounded-lg text-center transition-transform transform hover:scale-105 hover:bg-gray-700">
+        <i class="fas fa-briefcase mr-2"></i> Portfólio
+      </a>
+      <a href="https://github.com/zzjunior" class="block w-full bg-gray-800 text-white text-lg font-semibold py-3 rounded-lg text-center transition-transform transform hover:scale-105 hover:bg-gray-700">
+        <i class="fab fa-github mr-2"></i> GitHub
+      </a>
+      <a href="https://linkedin.com/in/zjúniorsantos/" class="block w-full bg-gray-800 text-white text-lg font-semibold py-3 rounded-lg text-center transition-transform transform hover:scale-105 hover:bg-gray-700">
+        <i class="fab fa-linkedin mr-2"></i> LinkedIn
+      </a>
+      <a href="https://instagram.com/zzjunior_" class="block w-full bg-gray-800 text-white text-lg font-semibold py-3 rounded-lg text-center transition-transform transform hover:scale-105 hover:bg-gray-700">
+        <i class="fab fa-instagram mr-2"></i> Instagram
+      </a>
+      <a href="mailto:santos.junior.706@ufrn.edu.br" class="block w-full bg-gray-800 text-white text-lg font-semibold py-3 rounded-lg text-center transition-transform transform hover:scale-105 hover:bg-gray-700">
+        <i class="fas fa-envelope mr-2"></i> E-mail
+      </a>
+    </div>
+</main>
 
-        <ul class="footer-list">
-          <li>
-            <h4>Serviços</h4>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/siga_tj/" target="_blank" class="footer-link">ID Visual</a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/siga_tj/" target="_blank" class="footer-link">Landing Page | Site institucional</a>
-          </li>
-          <li>
-            <a href="https://agenciatj.com.br" target="_blank" class="footer-link">Minha Agencia</a>
-          </li>
-          </ul>
-      </div>
-      <div id="footer_copyright">
-        Júnior Santos | Copyhight
-        &#169
-        2025
-      </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-NOxA67MC6c/DnpE37pcUB+Z+sG8U4eA0Wz+uvU3v4eBjI2ujtA9iZE/iwQp5TTTf" crossorigin="anonymous"></script>
-    <script src="./JS/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
- </body>
+  
+  <footer class="text-center py-5">
+    <p>&copy; 2025 Júnior Santos</p>
+  </footer>
+
+  <script src="/assets/js/typing.js"></script>
+  <script src="/assets/js/loadImage.js"></script>
+  <script src="/assets/js/softSkills.js"></script>
+
+</body>
 </html>
+

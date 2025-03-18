@@ -1,0 +1,9 @@
+# node
+node_modules/
+
+# build
+output.css
+
+# configurações vs
+.vscode/
+.hintrc
