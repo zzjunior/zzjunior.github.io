@@ -2,7 +2,7 @@
 node_modules/
 
 # build
-output.css
+/output.css
 
 # configurações vs
 .vscode/
